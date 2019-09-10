@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.11.9)  10 SEP 2019 12:42
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.11.9)  11 SEP 2019 00:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1802,23 +1802,19 @@ File: figures/structure_odoo.png Graphic file (type bmp)
 <figures/structure_odoo.png>
 File: figures/manifest.png Graphic file (type bmp)
 <figures/manifest.png>
-
-Underfull \vbox (badness 1478) has occurred while \output is active []
-
  [20]
 File: figures/scaffold.png Graphic file (type bmp)
 <figures/scaffold.png>
+ [21]
+File: figures/Modelli_creati.png Graphic file (type bmp)
+<figures/Modelli_creati.png>
 
-[21]
-File: figures/saleorder.png Graphic file (type bmp)
-<figures/saleorder.png>
-
-Overfull \hbox (64.59753pt too wide) in paragraph at lines 53--54
+Overfull \hbox (68.46222pt too wide) in paragraph at lines 53--54
  [] 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
 
  []
 
@@ -1837,13 +1833,7 @@ File: figures/product_packagin.png Graphic file (type bmp)
  [27]
 File: figures/pianali.png Graphic file (type bmp)
 <figures/pianali.png>
-
-Overfull \hbox (5.13368pt too wide) in paragraph at lines 159--166
-[]\TU/lmr/m/n/12 Aggiungendo il seguente campo Automezzo contenente i valori: A
-utotreno, Motrice.
- []
-
-[28]
+ [28]
 File: figures/order.png Graphic file (type bmp)
 <figures/order.png>
 ) [29]
@@ -1919,16 +1909,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--48
 
  []
 
-[44] [45]) [46] (./endmatter/glossario.tex
-Overfull \hbox (1.74489pt too wide) in paragraph at lines 15--16
+[44] [45]) [46] (./endmatter/glossario.tex [47
+
+
+]
+Overfull \hbox (1.74489pt too wide) in paragraph at lines 16--17
 []\TU/lmr/bx/n/12 Time-to-Market\TU/lmr/m/n/12 :  tempo che intercorre fra l’in
 izio del processo di sviluppo
  []
 
-[47
-
-
-]) [48] (./endmatter/abbr.tex) (./dissertation.bbl [49
+) [48] (./endmatter/abbr.tex) (./dissertation.bbl [49
 
 ] [50
 
@@ -1975,8 +1965,8 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  46595 strings out of 492970
- 1037292 string characters out of 6133938
- 1289878 words of memory out of 5000000
+ 1037316 string characters out of 6133938
+ 1289867 words of memory out of 5000000
  49798 multiletter control sequences out of 15000+600000
  537093 words of font info for 60 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

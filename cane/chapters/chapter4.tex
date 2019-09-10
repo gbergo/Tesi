@@ -22,7 +22,7 @@ Un modulo Odoo può contenere un numero di elementi:
 \end{itemize}
 
 \subsection{Struttura di un modulo}
-Ogni modulo è una directory all'interno di una directory contenente tutti i moduli, specificata utilizzando il comando --addons-path nel file di configurazione.
+Ogni modulo è una directory all'interno di una directory contenente tutti i moduli Odoo, specificata utilizzando il comando "- -addons-path <nome\_modulo>" nel file di configurazione.
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.5]{figures/structure_odoo}
 		\caption[Struttura di un modulo]{Struttura modulo}
@@ -30,7 +30,7 @@ Ogni modulo è una directory all'interno di una directory contenente tutti i mod
 	\end{center}
 \end{figure}
 
-Un modulo è dichiarato nel suo manifest, per specificare i metadati del modulo, e anche su un file Python init.py, contenente istruzioni di importazione del controller e modello.
+Un modulo è dichiarato nel suo file "\_manifest\_.py", per specificare i metadati del modulo, e anche su un file Python "init.py", contenente l'importazione del controller e modello.
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.4]{figures/manifest}
 		\caption[File manifest]{File manifest}
@@ -38,7 +38,7 @@ Un modulo è dichiarato nel suo manifest, per specificare i metadati del modulo,
 	\end{center}
 \end{figure}
 
-Odoo fornisce un comando a riga di comando per aiutare a configurare un nuovo modulo (vuoto), creando automaticamente un gruppo di file standard per un modulo. La maggior parte di essi contiene semplicemente codice commentato o XML:
+Odoo fornisce un comando per configurare un nuovo modulo (vuoto), creando automaticamente un gruppo di file standard. La maggior parte di essi contiene semplicemente codice commentato o XML:
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.6]{figures/scaffold}
 		\caption[Comando per configurare un nuovo modulo]{Comando per configurare un nuovo modulo}
@@ -50,9 +50,9 @@ Ogni modello odoo è identificato con un id (univoco) ed un nome che può essere
 Tutti questi dati permettono oggettivamente di valutare la corretta implementazione e creazione del modello.
 
 \begin{figure}[H]
-	\begin{center} \includegraphics[scale=0.35]{figures/saleorder}
-		\caption[Interfaccia vendite Odoo]{Interfaccia vendite Odoo}
-		\label{fig:sale_order}
+	\begin{center} \includegraphics[scale=0.35]{figures/Modelli_creati}
+		\caption[Modelli creati]{Modelli creati}
+		\label{fig:Modelli_creati}
 	\end{center}
 \end{figure}
 \newpage
@@ -73,7 +73,8 @@ Questo modulo entra in funzione quando si approva un ordine di vendita, calcola 
 \item Se l'opzione Consenti credito è selezionata, il sistema non controllerà i limiti di credito e consentirà a quel partner di ignorare il limite.
 \end{itemize}
 \vspace*{0.5cm}
-Qui abbiamo aggiunto gli stati Blocco Scaduto e Limite di credito.\\
+Qui abbiamo aggiunto le seguenti funzionalità.\\
+Inseriamo gli stati Blocco Scaduto e Limite di credito.\\
 Quando raggiungiamo lo stato Blocco Scaduto, stiamo confermando un ordine con una data di scadenza antecedente a quella attuale, vuol dire che l'ordine di vendita è già scaduto.\\
 Al momento della conferma d'ordine verrà mostrato un popup contenente:\\
 \begin{itemize}
@@ -120,7 +121,7 @@ Al momento del click sul tasto ok, del popup, la fattura si sposterà nello stat
 Nella sezione Vendite, sulla voce Canali di Vendita abbiamo la possibilità di inserire un nuovo canale.
 In questo modulo abbiamo aggiunto al form il campo Codice canale e Codice canale di vendita.
 Il campo Codice canale di vendita viene valorizzato con il codice canale + nome del canale di vendita.\\
-Poi nella voce Clienti, quando aggiungiamo un nuovo cliente e selezioniamo 'Persona', nella vista visualizzeremo il campo Codice cliente. Questo campo non verrà visualizzato nel momento in cui vogliamo inserendo un nuovo nuovo cliente selezioniamo azienda.
+Poi nella voce Clienti, che si riferisce ad un altro modulo, quando aggiungiamo un nuovo cliente e selezioniamo 'Persona', abbiamo aggiunto il campo Codice cliente. Questo campo non verrà visualizzato nel momento in cui inserendo un nuovo nuovo cliente selezioniamo azienda.
 
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.3]{figures/ibg_code}
@@ -131,7 +132,7 @@ Poi nella voce Clienti, quando aggiungiamo un nuovo cliente e selezioniamo 'Pers
 \newpage
 
 \section{Gestione imballi}
-Nella sezione Magazzino, sulla casella pacchetti di prodotto abbiamo aggiunto i seguenti campi:
+Nella sezione Magazzino, sulla voce Colli di prodotto abbiamo aggiunto i seguenti campi:
 \begin{itemize}
 \item Pianale in relazione con un solo prodotto;
 \item Codice Parte in relazione con un solo prodotto;
@@ -147,7 +148,7 @@ Nella sezione Magazzino, sulla casella pacchetti di prodotto abbiamo aggiunto i 
 	\end{center}
 \end{figure}
 
-Nella casella Ordini di vendita, abbiamo aggiunto il campo \textit{Pianali}, che viene compilato tramite la divisione tra "quantità ordinata" / "quantità per confezione".
+Nella sezione Vendite, voce Ordini, abbiamo aggiunto il campo \textit{Pianali}, che viene compilato tramite la divisione tra "quantità ordinata" / "quantità per confezione".
 La logica per il calcolo del campo è la seguente:
 \begin{itemize}
 	\item Se il rapporto da come risultato un numero intero, il sistema deve compilare il campo Pianali con il risultato del rapporto;
@@ -156,7 +157,7 @@ La logica per il calcolo del campo è la seguente:
 	\item Se il rapporto da come risultato un numero decimale superiore all'unità il valore del campo Pianali va compilato con il risultato del rapporto approssimato per difetto all'intero più vicino. \\
 	(Risultato rapproto= 2,5 campo pianali = 2).
 \end{itemize}
-Aggiungendo il seguente campo Automezzo contenente i valori: Autotreno, Motrice. Otteniamo la seguente view.
+Inoltre, abbiamo inserito il seguente campo Automezzo contenente i valori: Autotreno, Motrice. Alla fine di tutto, otteniamo la seguente view.
 \vspace*{0.5cm}
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.3]{figures/pianali}
@@ -165,12 +166,12 @@ Aggiungendo il seguente campo Automezzo contenente i valori: Autotreno, Motrice.
 	\end{center}
 \end{figure}
 
-Al salvataggio dell'ordine occorre innescare una funzione che effettui la seguente operazione:
+Un'altra funzionalità la troviamo al salvataggio dell'ordine che innesca una funzione che effettua la seguente operazione:
 \begin{itemize}
-\item Nel caso in cui gli ordini creati dalla funzione presentino lo stesso prodotto occorre rendere unica la line aggiornando quindi la quantità;
+\item Nel caso in cui gli ordini creati nelle righe ordine presentino lo stesso prodotto occorre rendere unica la \textit{line} aggiornando quindi la quantità;
 \end{itemize}
 \newpage
-Poi nel form di inserimento prodotto sono stati aggiunti due campi checkbox: E' un imballo, E' un fustino.
+Infine nel form di inserimento prodotto sono stati aggiunti due campi checkbox: E' un imballo, E' un fustino.
 
 \vspace*{0.5cm}
 \begin{figure}[H]

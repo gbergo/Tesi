@@ -11,10 +11,10 @@ Per accertare la copertura dei requisiti si è ricorso a delle prove pratiche de
 
 \subsection{Limite di credito del partner}
 
-Come detto in precedenze nel \hypertarget{(chap:capitolo4)}{\textbf{Capitolo 4}} si confronta l'importo dell'ordine di vendita da approvare con il limite di credito del partner. Se il limite di credito è inferiore, non consente di approvare l'ordine di vendita.
+Come detto in precedenze nel \hypertarget{(chap:capitolo4)}{\textbf{Capitolo 4}} si confronta l'importo dell'ordine di vendita da approvare con il limite di credito del partner. Se il limite di credito è inferiore oppure si modifica il prezzo unitario del prodotto, non consente di approvare l'ordine di vendita.
 \newpage
 %\vspace*{0.5cm}
-Per effettuare questo Test, abbiamo creato un 'Ordine di Vendita' ed abbiamo compilato i seguenti campi :
+Per effettuare questo test, abbiamo creato un 'Ordine di Vendita' ed abbiamo compilato i seguenti campi :
 \begin{itemize}
 \item Cliente;
 \item Indirizzo di fatturazione;
@@ -35,7 +35,7 @@ A questo punto, si fa un click sul pulsante 'Conferma ordine', e se tutto va a b
 	\end{center}
 \end{figure}
 
-Invece, se al termine della procedura di compilazione dei campi vado a modificare il 'Prezzo unitario' (prezzo fisso del prodotto), e faccio click su 'Conferma ordine', verrà visualizzato il popup d'errore.
+Invece, se al termine della procedura di compilazione dei campi si va a modificare il 'Prezzo unitario' (prezzo fisso del prodotto), e faccio click su 'Conferma ordine', verrà visualizzato il popup d'errore.
 In questo caso abbiamo modificato lo stesso prodotto inserito precedentemente che costa € 5,00 con € 15,00. 
 Una volta che si da l'ok al popup la fattura va nello stato 'Limite di Credito', dove non è più possibile modificarla.
 
@@ -47,7 +47,7 @@ Una volta che si da l'ok al popup la fattura va nello stato 'Limite di Credito',
 	\end{center}
 \end{figure}
 
-Per quanto riguarda il Blocco Scaduto, stiamo confermando un ordine con una data di scadenza antecedente a quella attuale, vuol dire che l'ordine di vendita è già scaduto.
+Per quanto riguarda lo stato Blocco Scaduto, stiamo confermando un ordine con una data di scadenza antecedente a quella attuale, vuol dire che l'ordine di vendita è già scaduto.
 
 \vspace*{0.5cm}
 Per effettuare questo Test, abbiamo creato un 'Ordine di Vendita' ed abbiamo compilato i seguenti campi :
@@ -96,7 +96,7 @@ In automatico il campo 'Codice canale di vendita' (che è \glo{readonly}), verr�
 
 \subsection{Gestione imballi}
 
-Per effettuare questo Test, abbiamo creato un 'Ordine di vendita' ed abbiamo compilato i seguenti campi :
+Per effettuare questo test, abbiamo creato un 'Ordine di vendita' ed abbiamo compilato i seguenti campi :
 \begin{itemize}
 	\item Cliente;
 	\item Indirizzo di fatturazione;
@@ -162,7 +162,7 @@ In questo caso abbiamo settato la Quantità ordinata (1) / Quantità per confezi
 \end{figure}
 
 \newpage
-Infine al salvataggio di un ordine di vendita abbiamo creato un test per controllare che all'inserimento di uno stesso prodotto, occorre rendere unica la \textit{line} aggiornandone solo la quantità.
+Infine al salvataggio di un ordine di vendita verifichiamo che all'inserimento di uno stesso prodotto, occorre rendere unica la \textit{line} aggiornandone solo la quantità.
 
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.3]{figures/ctrl_1}
