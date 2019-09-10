@@ -1,0 +1,114 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: dissertation.aux
+The style file: plainnat.bst
+A level-1 auxiliary file: chapters/introduction.aux
+A level-1 auxiliary file: chapters/chapter2.aux
+A level-1 auxiliary file: chapters/chapter3.aux
+A level-1 auxiliary file: chapters/chapter4.aux
+A level-1 auxiliary file: chapters/chapter5.aux
+A level-1 auxiliary file: chapters/chapter6.aux
+A level-1 auxiliary file: chapters/conclusion.aux
+Illegal, another \bibstyle command---line 34 of file dissertation.aux
+ : \bibstyle
+ :          {apa}
+I'm skipping whatever remains of this command
+Database file #1: ciaone.bib
+Warning--entry type for "python" isn't style-file defined
+--line 2 of file ciaone.bib
+Warning--entry type for "javascript" isn't style-file defined
+--line 8 of file ciaone.bib
+Warning--entry type for "odoo" isn't style-file defined
+--line 13 of file ciaone.bib
+Warning--entry type for "orm" isn't style-file defined
+--line 18 of file ciaone.bib
+Warning--entry type for "postgresql" isn't style-file defined
+--line 23 of file ciaone.bib
+Warning--entry type for "openproject" isn't style-file defined
+--line 28 of file ciaone.bib
+Warning--entry type for "pgadmin" isn't style-file defined
+--line 37 of file ciaone.bib
+Warning--entry type for "pycharm" isn't style-file defined
+--line 43 of file ciaone.bib
+Warning--entry type for "pip" isn't style-file defined
+--line 48 of file ciaone.bib
+Warning--entry type for "slack" isn't style-file defined
+--line 54 of file ciaone.bib
+Repeated entry---line 60 of file ciaone.bib
+ :  pycharm
+ :         ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "homebrew" isn't style-file defined
+--line 65 of file ciaone.bib
+Warning--entry type for "stageit" isn't style-file defined
+--line 70 of file ciaone.bib
+Warning--entry type for "doc" isn't style-file defined
+--line 76 of file ciaone.bib
+Warning--to sort, need author or key in openproject
+Warning--to sort, need author or key in postgresql
+Warning--to sort, need author or key in javascript
+Warning--to sort, need author or key in python
+Warning--to sort, need author or key in odoo
+Warning--to sort, need author or key in slack
+Warning--to sort, need author or key in pycharm
+Warning--to sort, need author or key in stageit
+Warning--to sort, need author or key in doc
+Warning--to sort, need author or key in orm
+Warning--to sort, need author or key in pgadmin
+Warning--to sort, need author or key in homebrew
+Warning--to sort, need author or key in pip
+Warning--empty year in doc
+Warning--empty year in homebrew
+Warning--empty year in javascript
+Warning--empty year in odoo
+Warning--empty year in openproject
+Warning--empty year in orm
+Warning--empty year in pgadmin
+Warning--empty year in pip
+Warning--empty year in postgresql
+Warning--empty year in pycharm
+Warning--empty year in python
+Warning--empty year in slack
+Warning--empty year in stageit
+You've used 13 entries,
+            2773 wiz_defined-function locations,
+            638 strings with 5604 characters,
+and the built_in function-call counts, 3153 in all, are:
+= -- 299
+> -- 0
+< -- 0
++ -- 13
+- -- 0
+* -- 210
+:= -- 257
+add.period$ -- 26
+call.type$ -- 13
+change.case$ -- 39
+chr.to.int$ -- 13
+cite$ -- 65
+duplicate$ -- 195
+empty$ -- 456
+format.name$ -- 0
+if$ -- 768
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 0
+newline$ -- 60
+num.names$ -- 0
+pop$ -- 182
+preamble$ -- 1
+purify$ -- 26
+quote$ -- 0
+skip$ -- 183
+stack$ -- 0
+substring$ -- 39
+swap$ -- 13
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 143
+warning$ -- 26
+while$ -- 0
+width$ -- 0
+write$ -- 124
+(There were 2 error messages)

@@ -1,0 +1,111 @@
+%!TEX root = ../dissertation.tex
+
+\hypertarget{(chap:capitolo6)}{}
+\chapter{Tecnologie e strumenti}
+Questo capitolo riporta le tecnologie e gli strumenti utilizzati durante il corso dello stage.
+\section{Tecnologie}
+\subsection{Python}
+\begin{figure}[H]
+	\begin{center} \includegraphics[width=2cm]{figures/python}
+		\caption[Logo Python]{Logo Python} 
+		\label{logo_python} 
+	\end{center}
+\end{figure}
+\bit{Python}{python}, il cui logo riportato in Figura \ref{logo_python}, è un linguaggio di programmazione tra i più famosi attualmente disponibili, è un linguaggio ad oggetto, sintatticamente semplice e intuitivo che permette di avere un approccio ai problemi molto più operativo. Python 3.7.0 è la versione e la base tecnologica su cui si è basato lo stage e gli strumenti utilizzati.
+
+\subsection{ORM Api}
+\begin{figure}[H]
+	\begin{center} \includegraphics[width=4cm]{figures/orm}
+		\caption[ORM API]{ORM API}  
+		\label{orm} 
+
+	\end{center}
+\end{figure}
+\bit{ORM Api}{orm} fornisce, mediante un'interfaccia orientata agli oggetti, tutti i servizi inerenti alla persistenza dei dati, astraendo nel contempo le caratteristiche implementative dello specifico RDBMS utilizzato. \\ 
+I principali vantaggi nell'uso di un tale sistema sono i seguenti:
+\begin{itemize}
+\item Un'elevata portabilità rispetto alla tecnologia DBMS utilizzata: cambiando DBMS non devono essere riscritte le routine che implementano lo strato di persistenza;
+\item Drastica riduzione della quantità di codice sorgente da redigere; l'ORM maschera dietro semplici comandi le complesse attività di creazione, prelievo, aggiornamento ed eliminazione dei dati.  Tali attività occupano di solito una buona percentuale del tempo di stesura, testing e manutenzione complessivo;
+\item Suggerisce la realizzazione dell'architettura di un sistema software mediante approccio stratificato, tendendo pertanto ad isolare in un solo livello la logica di persistenza dei dati, a vantaggio della modularità complessiva del sistema.
+\end{itemize}
+L'uso di un ORM favorisce il raggiungimento di più alti standard qualitativi software, migliorando in particolare le caratteristiche di correttezza, manutenibilità, evolvibilità e portabilità.
+
+\subsection{XML/XPATH}
+
+
+ XML/ XPath è un metalinguaggio per la definizione di linguaggi di markup, ovvero un linguaggio marcatore basato su un meccanismo sintattico che consente di definire e controllare il significato degli elementi contenuti in un documento o in un testo.
+
+\section{Strumenti}
+\subsection{OpenProject}
+\begin{figure}[H]
+	\begin{center} \includegraphics[width=2cm]{figures/openproject}
+		\caption[Logo OpenProject]{Logo OpenProject}  
+		\label{openproject} 
+	\end{center}
+\end{figure}
+\bit{OpenProject}{openproject}, il cui logo riportato in Figura \ref{openproject}, è una piattaforma di project management utilizzata durante il progetto per la gestione delle task da soddisfare in un certo periodo di tempo e l'aggiornamento del loro stato di esecuzione.
+
+\subsection{PostgreSQL}
+\begin{figure}[H]
+	\begin{center} \includegraphics[width=2cm]{figures/Logo_Postgresql}
+		\caption[Logo Postgresql]{Logo Postgresql}  
+		\label{logo_postgresql} 
+	\end{center}
+\end{figure}
+\bit{Sql-PostgreSql}{postgresql}, il cui logo riportato in Figura \ref{logo_postgresql}, è un completo DBMS ad oggetti. Odoo ha bisogno di un server PostgreSQL per funzionare correttamente. La configurazione predefinita per il pacchetto 'deb' di Odoo è di usare il server PostgreSQL sullo stesso host dell'istanza di Odoo.
+
+\subsection{PyCharm}
+\begin{figure}[H]
+	\begin{center} \includegraphics[width=2cm]{figures/Logo_PyCharm}
+		\caption[Logo PyCharm]{Logo PyCharm}
+		\label{logo_pyc} 
+	\end{center}
+\end{figure}
+\bit{PyCharm}{pycharm}, il cui logo riportato in Figura \ref{logo_pyc}, è un IDE utilizzato in particolare per il linguaggio \bit{Python}{python}. Fornisce analisi del codice, un debugger grafico, un tester di unità integrato, integrazione con i sistemi di controllo di versione e supporta lo sviluppo web con Django e Data Science con Anaconda. PyCharm è multipiattaforma , con versioni Windows , macOS e Linux .
+
+\subsection{pgAdmin 4}
+\begin{figure}[H]
+	\begin{center} \includegraphics[width=2cm]{figures/Logo_Postgresql}
+		\caption[Logo pgAdmin 4]{Logo pgAdmin 4}
+		\label{logo_postgresql} 
+	\end{center}
+\end{figure}
+\bit{pgAdmin 4}{pgadmin} è un'applicazione che consente di amministrare in modo semplificato database PostgreSQL.  L'applicazione è indirizzata sia agli amministratori del database, sia agli utenti. Gestisce i permessi prelevandoli dal database PostgreSQL. E' stato uno strumento molto utile durante lo stage perchè mi ha permesso di monitorare costantemente il database da qualsiasi aggiornamento, grazie alla sua semplicità, verificandone il corretto salvataggio dei dati su ogni modulo.
+
+\subsection{Homebrew}
+\begin{figure}[H]
+	\begin{center} \includegraphics[width=2cm]{figures/homebrew}
+		\caption[Logo Homebrew]{Logo Homebrew}
+		\label{logo_homebrew} 
+	\end{center}
+\end{figure}
+\bit{Homebrew}{homebrew}, il cui logo riportato in Figura \ref{logo_homebrew}, è un gestore di pacchetti  che semplifica l'installazione di software sul sistema operativo macOS di Apple e Linux. Fondamentale per l'installazione di pacchetti non presenti nella libreria standard, di facile utilizzo ha permesso di installare velocemente pacchetti indispensabili per il proseguimento dello stage.
+
+
+\subsection{PIP}
+\begin{figure}[H]
+	\begin{center} \includegraphics[width=2cm]{figures/pip}
+		\caption[Logo Pip]{Logo PIP}
+		\label{logo_pip} 
+	\end{center}
+\end{figure}
+\bit{PIP}{pip}, il cui logo riportato in Figura \ref{logo_pip}, è un gestore di pacchetti fondamentale per l’installazione delle dipendenze Python.
+\newpage
+
+\subsection{Odoo}
+\begin{figure}[H]
+	\begin{center} \includegraphics[width=2cm]{figures/logo_odoo}
+		\caption[Logo Odoo]{Logo Odoo}
+		\label{logo_odoo} 
+	\end{center}
+\end{figure}
+
+\bit{Odoo}{odoo}, il cui logo riportato in Figura \ref{logo_odoo}, è un software di gestione aziendale a struttura modulare.
+Ogni modulo risponde alle esigenze di informatizzazione di un'area
+funzionale dell'impresa, ecco le principali:
+\begin{itemize}
+	\item Moduli per creare il sito web aziendale (Website Builder, e-Commerce,\\ Blogs );
+	\item Moduli inerenti il ciclo delle vendite (CRM, Preventivi, Punto Vendita);
+	\item Moduli per la gestione aziendale (Gestione Progetti, Fatturazione, Contabilità, Magazzino, Produzione, Acquisti);
+	\item Moduli di marketing (Campagne eMails, Eventi, Automatizzazione delle tentate vendite.
+\end{itemize}
