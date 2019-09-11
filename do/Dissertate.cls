@@ -338,7 +338,7 @@
 \newcommand{\dedicationpage}{
 	\phantomsection
 	\vspace*{\fill}
-	\addcontentsline{toc}{chapter}{Ringraziamenti}
+	%\addcontentsline{toc}{chapter}{Ringraziamenti}
 	\chapter*{Ringraziamenti}
 	\noindent {\itshape \input{frontmatter/dedication}}
 	\vspace*{\fill}
@@ -348,7 +348,7 @@
 
 \newcommand{\abstract}{
 	\phantomsection
-	\addcontentsline{toc}{chapter}{Sommario}
+%	\addcontentsline{toc}{chapter}{Sommario}
 	\chapter*{Sommario}
 	\noindent { \input{frontmatter/abstract}}
 }
