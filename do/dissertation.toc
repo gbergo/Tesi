@@ -31,21 +31,21 @@
 \contentsline {subsection}{\numberline {4.1.1}Composizione di un modulo}{19}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Struttura di un modulo}{20}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Moduli sviluppati}{23}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Limite di credito del partner}{23}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Canali di Vendita}{26}{section.4.3}
-\contentsline {section}{\numberline {4.4}Gestione imballi}{27}{section.4.4}
+\contentsline {subsection}{\numberline {4.2.1}Limite di credito del partner}{24}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Canali di Vendita}{27}{section.4.3}
+\contentsline {section}{\numberline {4.4}Gestione imballi}{28}{section.4.4}
 \contentsline {chapter}{\numberline {5}Test e validazione}{31}{chapter.5}
 \contentsline {section}{\numberline {5.1}Test di sistema e collaudo}{31}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Limite di credito del partner}{31}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Canali di Vendita}{34}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Gestione imballi}{35}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}Test di Unità}{41}{section.5.2}
-\contentsline {chapter}{\numberline {6}Conclusioni}{43}{chapter.6}
-\contentsline {section}{\numberline {6.1}Consuntivo finale}{43}{section.6.1}
-\contentsline {section}{\numberline {6.2}Raggiungimento degli obiettivi}{44}{section.6.2}
-\contentsline {section}{\numberline {6.3}Conoscenze acquisite}{45}{section.6.3}
-\contentsline {section}{\numberline {6.4}Sviluppi futuri del software}{45}{section.6.4}
-\contentsline {section}{\numberline {6.5}Valutazione personale}{46}{section.6.5}
-\contentsline {chapter}{Glossario}{47}{section*.44}
-\contentsline {chapter}{Acronimi}{48}{section*.46}
-\contentsline {chapter}{Riferimenti bibliografici}{51}{section*.49}
+\contentsline {subsection}{\numberline {5.1.2}Canali di Vendita}{37}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Gestione imballi}{37}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Test di Unità}{43}{section.5.2}
+\contentsline {chapter}{\numberline {6}Conclusioni}{45}{chapter.6}
+\contentsline {section}{\numberline {6.1}Consuntivo finale}{45}{section.6.1}
+\contentsline {section}{\numberline {6.2}Raggiungimento degli obiettivi}{46}{section.6.2}
+\contentsline {section}{\numberline {6.3}Conoscenze acquisite}{47}{section.6.3}
+\contentsline {section}{\numberline {6.4}Sviluppi futuri del software}{47}{section.6.4}
+\contentsline {section}{\numberline {6.5}Valutazione personale}{48}{section.6.5}
+\contentsline {chapter}{Glossario}{49}{section*.47}
+\contentsline {chapter}{Acronimi}{50}{section*.49}
+\contentsline {chapter}{Riferimenti bibliografici}{53}{section*.52}

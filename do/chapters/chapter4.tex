@@ -50,7 +50,7 @@ Ogni modello odoo è identificato con un id (univoco) ed un nome che può essere
 Tutti questi dati permettono oggettivamente di valutare la corretta implementazione e creazione del modello.
 
 \begin{figure}[H]
-	\begin{center} \includegraphics[scale=0.35]{figures/Modelli_creati}
+	\begin{center} \includegraphics[scale=0.3]{figures/Modelli_creati}
 		\caption[Modelli creati]{Modelli creati}
 		\label{fig:Modelli_creati}
 	\end{center}
@@ -59,11 +59,17 @@ Tutti questi dati permettono oggettivamente di valutare la corretta implementazi
 \section{Moduli sviluppati}
 
 I moduli estesi e modificati sono: \begin{itemize}
-	\item Limite di credito del partner;
-	\item Canali di Vendita;
-	\item Gestione imballi.
+	\item Limite di credito del partner (my\_project);
+	\item Canali di Vendita (ibg\_code);
+	\item Gestione imballi (ibg\_packaging).
 \end{itemize}
-
+\begin{figure}[H]
+	\begin{center} \includegraphics[scale=0.50]{figures/diagramma}
+		\caption[Diagramma moduli sviluppati]{Diagramma moduli sviluppati}
+		\label{fig:diagramma}
+	\end{center}
+\end{figure}
+\newpage
 \subsection{Limite di credito del partner}
 Questo modulo entra in funzione quando si approva un ordine di vendita, calcola la somma di:
 \begin{itemize}
@@ -90,7 +96,7 @@ l'ordine di vendita \textbf{n° SO} del cliente \textbf{nome cliente} è stato b
 Puoi accedere al SO dal seguente link: \textbf{link al SO di riferimento}.}
 
 
-\vspace*{2cm}
+\vspace*{1.5cm}
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.3]{figures/check_expired}
 		\caption[Popup blocco scaduto]{Popup blocco scaduto}
@@ -98,10 +104,11 @@ Puoi accedere al SO dal seguente link: \textbf{link al SO di riferimento}.}
 	\end{center}
 \end{figure}
 \newpage
-Quando raggiungiamo lo stato Limite di Credito, stiamo modificando il prezzo unitario del prodotto rispetto a quello originale.\\
+Quando raggiungiamo lo stato Limite di Credito, stiamo confermando un ordine con un importo totale superiore al credito del partner.\\
 Al momento della conferma d'ordine verrà mostrato un popup contenente:
 \begin{itemize}
-	\item Il credito che il partner deve pagare.
+	\item Cliente;
+	\item Il credito disponibile del partner.
 \end{itemize}
 
 \begin{figure}[H]
@@ -114,7 +121,9 @@ Al momento della conferma d'ordine verrà mostrato un popup contenente:
 Al momento del click sul tasto ok, del popup, la fattura si sposterà nello stato Limite di Credito e verrà inviata una mail al direttore commerciale con scritto:\vspace*{0.5cm}
 \textit{Caro Administrator,\\
 	l'ordine di vendita \textbf{n° SO} del cliente \textbf{nome cliente} è stato bloccato per Limite di Credito.\\
-	Puoi accedere al SO dal seguente link: \textbf{link al SO di riferimento}.}
+	Puoi accedere al SO dal seguente link: \textbf{link al SO di riferimento}.}\vspace*{0.5cm}
+
+Inoltre è stato aggiunto un controllo al momento dell'inserimento di un prodotto. Se cerchiamo di modificare il prezzo unitario (>, < del prezzo di listino) dall'interfaccia 'Righe ordine', salviamo e confermiamo l'ordine, si visualizzerà un popup d'errore con scritto:\\ \textit{Prezzo non idoneo !}
 
 \newpage
 \section{Canali di Vendita}

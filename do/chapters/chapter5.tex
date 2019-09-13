@@ -35,8 +35,8 @@ A questo punto, si fa un click sul pulsante 'Conferma ordine', e se tutto va a b
 	\end{center}
 \end{figure}
 
-Invece, se al termine della procedura di compilazione dei campi si va a modificare il 'Prezzo unitario' (prezzo fisso del prodotto), e faccio click su 'Conferma ordine', verrà visualizzato il popup d'errore.
-In questo caso abbiamo modificato lo stesso prodotto inserito precedentemente che costa € 5,00 con € 15,00. 
+Invece, se al termine della procedura di compilazione dei campi il prezzo totale dell'importo è superiore al limite di credito del partner, e faccio click su 'Conferma ordine', verrà visualizzato il popup d'errore.\\
+In questo esempio abbiamo confermato l'ordine di 18,30 €, ma il limite di credito del partner 'Francesco' è di 10 €.
 Una volta che si da l'ok al popup la fattura va nello stato 'Limite di Credito', dove non è più possibile modificarla.
 
 
@@ -46,7 +46,23 @@ Una volta che si da l'ok al popup la fattura va nello stato 'Limite di Credito',
 		\label{fig:second_test}
 	\end{center}
 \end{figure}
-
+\newpage
+Inoltre abbiamo aggiunto un controllo al momento dell'inserimento di un prodotto.
+In questo esempio modifichiamo il prezzo di listino del prodotto, che è di 15,00 €, dalla vista 'Righe ordine' con 19,00 €.
+\begin{figure}[H]
+	\begin{center} \includegraphics[scale=0.3]{figures/list_price}
+		\caption[Prezzo di listino settato]{Prezzo di listino settato}
+		\label{fig:list_price}
+	\end{center}
+\end{figure}
+\newpage
+Salviamo tutto, e confermiamo l'ordine. A questo punto visualizzeremo un popup d'errore che non ci permetterà di concludere l'operazione di conferma d'ordine finché non si sistemerà il prezzo.
+\begin{figure}[H]
+	\begin{center} \includegraphics[scale=0.3]{figures/error_price}
+		\caption[Popup d'errore sul prezzo unitario]{Popup d'errore sul prezzo unitario}
+		\label{fig:error_price}
+	\end{center}
+\end{figure}
 Per quanto riguarda lo stato Blocco Scaduto, stiamo confermando un ordine con una data di scadenza antecedente a quella attuale, vuol dire che l'ordine di vendita è già scaduto.
 
 \vspace*{0.5cm}
@@ -72,10 +88,10 @@ Una volta che si da l'ok al popup la fattura va nello stato 'Blocco Stato', dove
 		\label{fig:third_test}
 	\end{center}
 \end{figure}
-
+\newpage
 \subsection{Canali di Vendita}
 
-Su questo modulo, abbiamo verificato che ll campo 'Codice canale di vendita' viene valorizzato con il campo 'Codice canale' + nome del 'Canale di vendita'.
+Su questo modulo, in Vendite, nella sezione Configurazione > Canali di vendita, abbiamo verificato che ll campo 'Codice canale di vendita' viene valorizzato con il campo 'Codice canale' + nome del 'Canale di vendita'.
 
 \vspace*{0.5cm}
 Per effettuare questo Test, abbiamo creato un 'Canale di Vendita' ed abbiamo compilato i seguenti campi :
@@ -83,7 +99,7 @@ Per effettuare questo Test, abbiamo creato un 'Canale di Vendita' ed abbiamo com
 \item Canale di Vendita;
 \item Codice canale;
 \end{itemize}
-\newpage
+
 In automatico il campo 'Codice canale di vendita' (che è \glo{readonly}), verrà valorizzato correttamente.
   
 \begin{figure}[H]
