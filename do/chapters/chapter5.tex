@@ -22,7 +22,7 @@ Per effettuare questo test, abbiamo creato un 'Ordine di Vendita' ed abbiamo com
 \item Data di scadenza (successiva alla data odierna);
 \item Termini di pagamento;
 \item Automezzo (selezione fra : Autotreno e Motrice);
-\item Seleziono un prodotto su Righe Ordine (tra quelli esistenti)
+\item Seleziono un prodotto su Righe Ordine (tra quelli esistenti o ne creo uno)
 \end{itemize}
 
 A questo punto, si fa un click sul pulsante 'Conferma ordine', e se tutto va a buon fine lo stato della fattura si sposta dallo stato 'Preventivo' allo stato 'Ordine di vendita'.
@@ -75,11 +75,11 @@ Per effettuare questo Test, abbiamo creato un 'Ordine di Vendita' ed abbiamo com
 	\item Data di scadenza (antecedente alla data odierna);
 	\item Termini di pagamento;
 	\item Automezzo (selezione fra : Autotreno e Motrice);
-	\item Seleziono un prodotto su Righe Ordine (tra quelli esistenti)
+	\item Seleziono un prodotto su Righe Ordine (tra quelli esistenti o ne creo uno)
 \end{itemize}
 
 A questo punto, si fa un click sul pulsante 'Conferma ordine', si visualizzerà il popup di errore.
-Una volta che si da l'ok al popup la fattura va nello stato 'Blocco Stato', dove non è più possibile modificarla.
+Una volta che si da l'ok al popup la fattura va nello stato\\ 'Blocco Stato', dove non è più possibile modificarla.
 
 
 \begin{figure}[H]
@@ -120,15 +120,15 @@ Per effettuare questo test, abbiamo creato un 'Ordine di vendita' ed abbiamo com
 	\item Data di scadenza (successiva alla data odierna);
 	\item Termini di pagamento;
 	\item Automezzo (selezione fra : Autotreno e Motrice);
-	\item Seleziono 'Aggiungi voce' su Righe Ordine (per selezionare un prodotto)
+	\item Seleziono 'Aggiungi voce' su Righe Ordine
 \end{itemize}
 
 Quando abbiamo fatto click sul campo 'Aggiungi voce', che mi permette di inserire un prodotto, visualizzerò un altro form dove compilerò i seguenti campi:
 \begin{itemize}
 \item Prodotto;
 \item Sezione;
-\item Quantità ordinata (in questo esempio: 20);
-\item Confezione;
+\item Quantità ordinata (in questo esempio: 20 "numeratore");
+\item Confezione (selezioniamo l'esempio riportato di seguito);
 \item Imposte (IVA facoltativa);
 \item Tempo di consegna (giorni);
 \end{itemize}
@@ -145,8 +145,8 @@ Come confezione abbiamo selezionato un esempio creato, di nome 'Tipo', che ha pe
 \newpage
 A questo punto salviamo la confezione, il prodotto, e ritorniamo all'interfaccia di 'Ordine di vendita'.
 Facciamo click su 'Conferma Ordine'. Come detto in precedenza, il campo 'Pianali' si compila automaticamente; è dato dal rapporto fra Quantità ordinata (20) / Quantità per confezione (7) = 2,85.\\
-Il risultato è un numero decimale superiore all'unità, il valore, del campo 'Pianali', verrà approssimato per difetto all'intero più vicino.\\
-( Risultato rapporto = 2,85 campo pianali = 2)
+Il risultato è un numero decimale superiore all'unità, il valore del campo 'Pianali', verrà approssimato per difetto all'intero più vicino.\\
+( Risultato rapporto = 2,85  campo pianali = 2)
 
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.3]{figures/fifth_test}

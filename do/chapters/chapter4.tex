@@ -3,7 +3,7 @@
 \hypertarget{(chap:capitolo4)}{}
 \chapter{Moduli Food-and-beverage}
 In questo capitolo presenteremo prima una rapida introduzione ai moduli odoo, tratta dalla
-\bit{documentazione}{doc} degli sviluppatori, per poi analizzare nel dettaglio ciascun modulo utilizzato, spiegando ciascun vincolo e delineandone quindi l'idea di base.
+\bit{documentazione}{doc} degli sviluppatori, per poi analizzare nel dettaglio ciascun modulo implementato, spiegando ciascun vincolo e delineandone quindi l'idea di base.
 \section{Modulo odoo standard}
 Odoo usa un'architettura client/server nella quale i client sono web browser che accedo al server odoo tramite \glo{RPC}.
 La logica aziendale e l'estensione vengono generalmente eseguite sul lato server.
@@ -81,6 +81,27 @@ Questo modulo entra in funzione quando si approva un ordine di vendita, calcola 
 \vspace*{0.5cm}
 Qui abbiamo aggiunto le seguenti funzionalità.\\
 Inseriamo gli stati Blocco Scaduto e Limite di credito.\\
+Quando raggiungiamo lo stato Limite di Credito, stiamo confermando un ordine con un importo totale superiore al credito del partner.\\
+Al momento della conferma d'ordine verrà mostrato un popup contenente:
+\begin{itemize}
+	\item Cliente;
+	\item Il credito disponibile del partner.
+\end{itemize}
+\newpage
+\begin{figure}[H]
+	\begin{center} \includegraphics[scale=0.3]{figures/check_limit}
+		\caption[Popup limite di credito]{Popup limite di credito}
+		\label{fig:check_limit}
+	\end{center}
+\end{figure}
+
+Al momento del click sul tasto ok, del popup, la fattura si sposterà nello stato Limite di Credito, dove non sarà possibile modificarla, e verrà inviata una mail al direttore commerciale con scritto:\vspace*{0.5cm}\\
+\textit{Caro Administrator,\\
+	l'ordine di vendita \textbf{n° SO} del cliente \textbf{nome cliente} è stato bloccato per Limite di Credito.\\
+	Puoi accedere al SO dal seguente link: \textbf{link al SO di riferimento}.}\vspace*{0.5cm}
+
+Inoltre è stato aggiunto un controllo al momento dell'inserimento di un prodotto. Se cerchiamo di modificare il prezzo unitario (>, < del prezzo di listino) dall'interfaccia 'Righe ordine', salviamo e confermiamo l'ordine, si visualizzerà un popup d'errore con scritto:\\ \textit{Prezzo non idoneo !}
+\newpage
 Quando raggiungiamo lo stato Blocco Scaduto, stiamo confermando un ordine con una data di scadenza antecedente a quella attuale, vuol dire che l'ordine di vendita è già scaduto.\\
 Al momento della conferma d'ordine verrà mostrato un popup contenente:\\
 \begin{itemize}
@@ -89,8 +110,9 @@ Al momento della conferma d'ordine verrà mostrato un popup contenente:\\
 	\item Importo dello scaduto: campo contenente la somma del totale delle fatture scadute;
 	\item Button OK
 \end{itemize}
-
-Inoltre al momento del click del tasto ok del popup, la fattura si sposterà nello stato Blocco Scaduto e verrà inviata una mail al direttore commerciale con scritto:\vspace*{0.5cm}
+\newpage
+Inoltre al momento del click del tasto ok del popup, la fattura si sposterà nello stato Blocco Scaduto, dove non sarà possibile modificarla, e verrà inviata una mail al direttore commerciale con scritto:
+\vspace*{0.5cm}\\
 \textit{Caro Administrator,\\
 l'ordine di vendita \textbf{n° SO} del cliente \textbf{nome cliente} è stato bloccato per presenza di pagamenti scaduti.\\
 Puoi accedere al SO dal seguente link: \textbf{link al SO di riferimento}.}
@@ -103,34 +125,14 @@ Puoi accedere al SO dal seguente link: \textbf{link al SO di riferimento}.}
 		\label{fig:check_expired}
 	\end{center}
 \end{figure}
-\newpage
-Quando raggiungiamo lo stato Limite di Credito, stiamo confermando un ordine con un importo totale superiore al credito del partner.\\
-Al momento della conferma d'ordine verrà mostrato un popup contenente:
-\begin{itemize}
-	\item Cliente;
-	\item Il credito disponibile del partner.
-\end{itemize}
 
-\begin{figure}[H]
-	\begin{center} \includegraphics[scale=0.3]{figures/check_limit}
-		\caption[Popup limite di credito]{Popup limite di credito}
-		\label{fig:check_limit}
-	\end{center}
-\end{figure}
-
-Al momento del click sul tasto ok, del popup, la fattura si sposterà nello stato Limite di Credito e verrà inviata una mail al direttore commerciale con scritto:\vspace*{0.5cm}
-\textit{Caro Administrator,\\
-	l'ordine di vendita \textbf{n° SO} del cliente \textbf{nome cliente} è stato bloccato per Limite di Credito.\\
-	Puoi accedere al SO dal seguente link: \textbf{link al SO di riferimento}.}\vspace*{0.5cm}
-
-Inoltre è stato aggiunto un controllo al momento dell'inserimento di un prodotto. Se cerchiamo di modificare il prezzo unitario (>, < del prezzo di listino) dall'interfaccia 'Righe ordine', salviamo e confermiamo l'ordine, si visualizzerà un popup d'errore con scritto:\\ \textit{Prezzo non idoneo !}
 
 \newpage
 \section{Canali di Vendita}
 Nella sezione Vendite, sulla voce Canali di Vendita abbiamo la possibilità di inserire un nuovo canale.
 In questo modulo abbiamo aggiunto al form il campo Codice canale e Codice canale di vendita.
 Il campo Codice canale di vendita viene valorizzato con il codice canale + nome del canale di vendita.\\
-Poi nella voce Clienti, che si riferisce ad un altro modulo, quando aggiungiamo un nuovo cliente e selezioniamo 'Persona', abbiamo aggiunto il campo Codice cliente. Questo campo non verrà visualizzato nel momento in cui inserendo un nuovo nuovo cliente selezioniamo azienda.
+Poi nella voce Clienti, che fa riferimento ad un altro modulo, quando aggiungiamo un nuovo cliente e selezioniamo 'Persona', abbiamo aggiunto il campo Codice cliente. Questo campo non verrà visualizzato nel momento in cui inserendo un nuovo nuovo cliente selezioniamo azienda.
 
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.3]{figures/ibg_code}
@@ -143,8 +145,8 @@ Poi nella voce Clienti, che si riferisce ad un altro modulo, quando aggiungiamo 
 \section{Gestione imballi}
 Nella sezione Magazzino, sulla voce Colli di prodotto abbiamo aggiunto i seguenti campi:
 \begin{itemize}
-\item Pianale in relazione con un solo prodotto;
-\item Codice Parte in relazione con un solo prodotto;
+\item Pianale (in relazione con un solo prodotto);
+\item Codice Parte (in relazione con un solo prodotto);
 \item Bottiglie per cassa;
 \item N° pianali per motrice;
 \item N° pianali per rimorchio
@@ -166,7 +168,7 @@ La logica per il calcolo del campo è la seguente:
 	\item Se il rapporto da come risultato un numero decimale superiore all'unità il valore del campo Pianali va compilato con il risultato del rapporto approssimato per difetto all'intero più vicino. \\
 	(Risultato rapproto= 2,5 campo pianali = 2).
 \end{itemize}
-Inoltre, abbiamo inserito il seguente campo Automezzo contenente i valori: Autotreno, Motrice. Alla fine di tutto, otteniamo la seguente view.
+Inoltre, abbiamo inserito il seguente campo Automezzo contenente i valori:\\ Autotreno, Motrice. Alla fine di tutto, otteniamo la seguente view.
 \vspace*{0.5cm}
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.3]{figures/pianali}

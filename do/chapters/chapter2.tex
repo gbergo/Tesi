@@ -8,23 +8,23 @@ In questo capitolo verranno riportati in modo approfondito lo scopo e gli obiett
 Il progetto generale nasce dalla visione dell'azienda, di studiare e implementare moduli sulla piattaforma ERP open Odoo.
 
 Il software è \glo{open source} e si può considerare una suite di prodotti software attivamente supportato da una community internazionale ed una italiana ai fini della localizzazione.
-Alcune caratteristiche che permettono di soddisfare gli obbiettivi sono: contabilità finanziaria, contabilità analitica, gestione del magazzino, gestione di vendite e acquisti, automazione dei processi, gestione risorse umane. (altre caratteristiche delle piattaforma:campagne di marketing, siti web aziendali e il software e-commerce).
+Alcune caratteristiche che permettono di soddisfare gli obbiettivi sono: contabilità finanziaria, contabilità analitica, gestione del magazzino, gestione di vendite e acquisti, automazione dei processi, gestione risorse umane. (altre caratteristiche delle piattaforma:campagne di marketing, siti web aziendali ed e-commerce).
 
 \section{Introduzione al progetto}
 Il progetto di stage, dopo l'evento \bit{StageIt}{stageit} ed alcune riunioni presso l'azienda, è stato studiato dettagliatamente e riportato nel documento "piano di lavoro", nello stesso sono riportati gli obiettivi e la pianificazione delle attività.
 
-Questi esempi fanno riferimento a problematiche in ambito produttivo "Food and beverage", realizzando un modulo che si occuperà di monitorare il ciclo di vita degli alimenti e delle bevande il tutto per ottimizzare il cosiddetto \glo{Time-to-Market}, mantenendo ottimali i livelli di inventario e ottimizzando i flussi economici dei prodotti.
-Lo stage prevede la realizzazione di diversi moduli il cui sviluppo sarà \glo{incrementale} in quanto ciascun modulo eredita struttura del modello e viste dai precedenti.
+In particolare fa riferimento a problematiche in ambito produttivo "Food and beverage", realizzando un modulo che si occupa di monitorare il ciclo di vita degli alimenti e delle bevande, il tutto per ottimizzare il cosiddetto \glo{Time-to-Market}, mantenendo ottimali i livelli di inventario e ottimizzando i flussi economici dei prodotti.
+Lo stage prevede la realizzazione di diversi moduli il cui sviluppo sarà \glo{incrementale}.
 
-A rendere più complicato il lavoro dell'apprendimento di odoo riportiamo alcuni principali problemi da tenere in considerazione:
+A rendere più complicato il lavoro dell'apprendimento di Odoo riportiamo alcuni principali problemi da tenere in considerazione:
 \begin{itemize}
 	\item Gestione del database: si appoggia a \bit{pgAdmin 4}{pgadmin}, che consente di gestire in modo semplificato database PostgreSQL, verificando il corretto inserimento o eliminazione di dati;
-	\item Gestire gli errori: organizzare una buona vista tramite i tag odoo, XML e XPath idonei, in modo da controllare gli errori e avvisi.
+	\item Gestire gli errori: organizzare una buona vista tramite i tag Odoo, XML e XPath idonei, in modo da controllare gli errori e avvisi.
 \end{itemize}
 
 \section{Vincoli temporali, tecnologici e metodologici}
 Nel periodo di stage svolto presso l'azienda mi è stato chiesto di svolgere dei task e tenere traccia del loro stato di completamento, tramite un applicazione via web condivisa, \bit{OpenProject}{openproject}, nel suddetto mi si richiedeva di annotare giornalmente l'avanzare del lavoro riportando idee e osservazioni emerse durante i \glo{brainstorming} quotidiani, criticità rilevate e positività riscontrate negli strumenti utilizzati.
-Le telefonate con i ragazzi delle sede di Napoli, che seguivano il progetto, sono state molto importanti per chiarire le consegne date su ogni task e la sintassi corretta da seguire.
+Le telefonate con i ragazzi delle sede di Napoli, che seguivano il progetto, sono state molto importanti per chiarire le consegne date su ogni task e la corretta sintassi del codice.
 
 Prima di iniziare lo stage è stato concordato con l'azienda un piano di lavoro su un totale di 320 ore, lavorando 5 giorni a settimana, 8 ore per ciascun giorno. 
 
@@ -92,7 +92,7 @@ La pianificazione delle attività è stata distribuita come mostrato nella Tabel
 		\hline																											
 		\multicolumn{2}{|l|}{72}	&	\multicolumn{2}{l|}{\textbf{B}: Sviluppo moduli}\\
 		\hline
-		\multirow{5}{1cm}{ } & 72  & \hspace{5mm}•\hspace{2mm} & Implementazione di nuovi moduli ODOO  \\ & & & o modifiche su esistenti\\
+		\multirow{5}{1cm}{ } & 72  & \hspace{5mm}•\hspace{2mm} & Implementazione di nuovi moduli Odoo  \\ & & & o modifiche su esistenti\\
 		
 		\hline
 																											
@@ -114,11 +114,11 @@ La pianificazione delle attività è stata distribuita come mostrato nella Tabel
 \newpage
 \section{Ambiente di lavoro}
 \subsection{Metodi di sviluppo}
-Il \glo{ciclo di vita} di un prodotto Sync Lab segue il \glo{modello evolutivo}, formato da un periodo di concezione dell'idea, analisi della stessa, realizzazione di una singola evoluzione ed infine, si rilascia il prodotto, che può avere più versioni esterne attive in parallelo e dovrà mostrare le nuove funzionalità sviluppate dimostrando così l'incremento fatto. In quest'ottica, lo sviluppo di un modulo può essere associato ad un iterazione, la cui \glo{milestone} è il passaggio dei test.
+Il \glo{ciclo di vita} di un prodotto Sync Lab segue il \glo{modello evolutivo}, formato da un periodo di concezione dell'idea, analisi della stessa, realizzazione di una singola evoluzione ed infine, si rilascia il prodotto, che può avere più versioni esterne attive in parallelo e dovrà mostrare le nuove funzionalità sviluppate dimostrando così l'incremento fatto. In quest'ottica, lo sviluppo di un modulo può essere associato ad un incremento, la cui \glo{milestone} è il passaggio dei test.
 
 
 \subsection{Gestione di progetto}
-Per quanto riguarda la gestione di progetto sono stati utilizzati alcuni strumenti descritti con maggiore dettaglio nel \hyperlink{(chap:capitolo6)}{\textbf{Capitolo 3}}. In generale per la gestione dei task da eseguire si è fatto uso di \bit{OpenProject}{openproject}, uno strumento di \glo{project management}; per la gestione della comunicazione e informazioni si è fatto uso dell'applicazione \bit{Slack}{slack} e per la condivisione di \bit{documentazione}{doc} e articoli si è fatto uso della e-mail.
+Per quanto riguarda la gestione di progetto sono stati utilizzati alcuni strumenti descritti con maggiore dettaglio nel \hyperlink{(chap:capitolo6)}{\textbf{Capitolo 3}}. In generale per la gestione dei task da eseguire si è fatto uso di \bit{OpenProject}{openproject}, uno strumento di \glo{project management}; per la gestione della comunicazione e informazioni si è fatto uso dell'applicazione \bit{Slack}{slack} e per la condivisione di documentazione e articoli si è fatto uso della e-mail.
 	
 \subsection{Linguaggio di programmazione e ambiente di sviluppo}
 Per la totalità dello stage si è lavorato utilizzando 
@@ -131,7 +131,7 @@ Questo linguaggio di programmazione è orientato agli oggetti ed interpretato di
 In questa sezione vengono riportati i principali rischi che si prefiguravano all'inizio dello stage. Ciascuno di essi oltre ad avere una breve descrizione riporta il livello di rischio, in termini di pericolosità per la riuscita dello stage e come si possa fare per evitarlo:
 \begin{itemize}
 	\item \textbf{Difficoltà nelle tecnologie adottate}\\
-	      Ad inizio stage è stato chiaro che \bit{Python}{python} avrebbe avuto un ruolo dominante nel progetto, la mole di librerie ed estensioni rendeva il linguaggio troppo vasto da poter approfondire nella sua interezza, ed oltre a questo vi era le views da sviluppare
+	      Ad inizio stage è stato chiaro che \bit{Python}{python} avrebbe avuto un ruolo dominante nel progetto, la mole di librerie ed estensioni rendeva il linguaggio troppo vasto da poter approfondire nella sua interezza, ed oltre a questo vi erano le views da imparare
 	      \begin{itemize}
 	      	\item \textbf{Livello di rischio}: Medio;
 	      	\item \textbf{Contromisure}: Studiare approfonditamente la costruzione di un modello Odoo tramite esercitazione.

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.11.9)  13 SEP 2019 16:54
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.11.9)  14 SEP 2019 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1810,44 +1810,45 @@ File: figures/Modelli_creati.png Graphic file (type bmp)
  [22]
 File: figures/diagramma.pdf Graphic file (type pdf)
 <use figures/diagramma.pdf>
- [23]
-Underfull \hbox (badness 10000) in paragraph at lines 82--86
-
- []
-
-File: figures/check_expired.png Graphic file (type bmp)
-<figures/check_expired.png>
-[24] [25]
+ [23] [24]
 File: figures/check_limit.png Graphic file (type bmp)
 <figures/check_limit.png>
 
-Overfull \hbox (21.22966pt too wide) in paragraph at lines 126--127
+Overfull \hbox (21.22966pt too wide) in paragraph at lines 103--104
 \TU/lmr/m/n/12 Se cerchiamo di modificare il prezzo unitario (>, < del prezzo d
 i listino) dall’interfaccia
  []
 
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
+
+ []
+
 [26]
+File: figures/check_expired.png Graphic file (type bmp)
+<figures/check_expired.png>
+ [27]
 File: figures/ibg_code.png Graphic file (type bmp)
 <figures/ibg_code.png>
- [27]
+ [28]
 File: figures/product_packagin.png Graphic file (type bmp)
 <figures/product_packagin.png>
- [28]
+ [29]
 File: figures/pianali.png Graphic file (type bmp)
 <figures/pianali.png>
- [29]
+ [30]
 File: figures/order.png Graphic file (type bmp)
 <figures/order.png>
-) [30]
+) [31]
 \openout2 = `chapters/chapter5.aux'.
 
- (./chapters/chapter5.tex
-Chapter 5.
-[31
+ (./chapters/chapter5.tex [32
 
 
 
 ]
+Chapter 5.
+[33]
 File: figures/first_test.png Graphic file (type bmp)
 <figures/first_test.png>
 
@@ -1855,39 +1856,39 @@ Overfull \hbox (7.03496pt too wide) in paragraph at lines 32--33
  [] 
  []
 
-[32]
+[34]
 File: figures/second_test.png Graphic file (type bmp)
 <figures/second_test.png>
- [33]
+ [35]
 File: figures/list_price.png Graphic file (type bmp)
 <figures/list_price.png>
- [34]
+ [36]
 File: figures/error_price.png Graphic file (type bmp)
 <figures/error_price.png>
- [35]
+ [37]
 File: figures/third_test.png Graphic file (type bmp)
 <figures/third_test.png>
- [36]
+ [38]
 File: figures/fourth_test.png Graphic file (type bmp)
 <figures/fourth_test.png>
- [37]
+ [39]
 File: figures/package.png Graphic file (type bmp)
 <figures/package.png>
- [38]
+ [40]
 File: figures/fifth_test.png Graphic file (type bmp)
 <figures/fifth_test.png>
- [39]
+ [41]
 File: figures/sixth_test.png Graphic file (type bmp)
 <figures/sixth_test.png>
- [40]
+ [42]
 File: figures/seventh_test.png Graphic file (type bmp)
 <figures/seventh_test.png>
- [41]
+ [43]
 File: figures/ctrl_1.png Graphic file (type bmp)
 <figures/ctrl_1.png>
 File: figures/ctrl_test.png Graphic file (type bmp)
 <figures/ctrl_test.png>
- [42]
+ [44]
 File: figures/unit_test.png Graphic file (type bmp)
 <figures/unit_test.png>
 
@@ -1895,10 +1896,10 @@ Overfull \hbox (12.59676pt too wide) in paragraph at lines 205--206
  [] 
  []
 
-) [43]
+) [45]
 \openout2 = `chapters/conclusion.aux'.
 
- (./chapters/conclusion.tex [44
+ (./chapters/conclusion.tex [46
 
 
 
@@ -1906,29 +1907,29 @@ Overfull \hbox (12.59676pt too wide) in paragraph at lines 205--206
 Chapter 6.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 42.
+(caption)                particular \caption on input line 41.
 See the caption package documentation for explanation.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45]
-Underfull \hbox (badness 10000) in paragraph at lines 46--48
+ [47]
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
  []
 
-[46] [47]) [48] (./endmatter/glossario.tex
+[48] [49]) [50] (./endmatter/glossario.tex
 Overfull \hbox (1.74489pt too wide) in paragraph at lines 16--17
 []\TU/lmr/bx/n/12 Time-to-Market\TU/lmr/m/n/12 :  tempo che intercorre fra l’in
 izio del processo di sviluppo
  []
 
-[49
+[51
 
 
-]) [50] (./endmatter/abbr.tex) (./dissertation.bbl [51
+]) [52] (./endmatter/abbr.tex) (./dissertation.bbl [53
 
-] [52
+] [54
 
 ]
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1953,7 +1954,7 @@ Underfull \hbox (badness 1117) in paragraph at lines 57--59
  [][][][] [] [][][][][] [] [][] [] [][][][][][] [] [][][][][][][] []
  []
 
-) [53]
+) [55]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 48.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
  (./dissertation.aux (./chapters/introduction.aux)
@@ -1980,4 +1981,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  85i,8n,138p,10464b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on dissertation.pdf (67 pages).
+Output written on dissertation.pdf (69 pages).
