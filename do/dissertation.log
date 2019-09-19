@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.11.9)  14 SEP 2019 13:31
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2018.11.9)  16 SEP 2019 17:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1512,8 +1512,11 @@ LaTeX Warning: Label `logo_python' multiply defined.
 
 LaTeX Warning: Label `logo_postgresql' multiply defined.
 
-) (./chapters/chapter4.aux) (./chapters/chapter5.aux)
-(./chapters/conclusion.aux))
+) (./chapters/chapter4.aux) (./chapters/chapter5.aux
+
+LaTeX Warning: Label `fig:check_limit' multiply defined.
+
+) (./chapters/conclusion.aux))
 \openout1 = `dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -1831,24 +1834,33 @@ File: figures/check_expired.png Graphic file (type bmp)
 File: figures/ibg_code.png Graphic file (type bmp)
 <figures/ibg_code.png>
  [28]
+File: figures/empresa.png Graphic file (type bmp)
+<figures/empresa.png>
+
+Overfull \hbox (17.04088pt too wide) in paragraph at lines 144--150
+[]\TU/lmr/m/n/12 Inserendo un nuovo cliente come \TU/lmr/m/it/12 Azienda \TU/lm
+r/m/n/12 la vista del form è differente dall’inserimento
+ []
+
+[29]
 File: figures/product_packagin.png Graphic file (type bmp)
 <figures/product_packagin.png>
- [29]
+ [30]
 File: figures/pianali.png Graphic file (type bmp)
 <figures/pianali.png>
- [30]
+ [31]
 File: figures/order.png Graphic file (type bmp)
 <figures/order.png>
-) [31]
+) [32]
 \openout2 = `chapters/chapter5.aux'.
 
- (./chapters/chapter5.tex [32
+ (./chapters/chapter5.tex
+Chapter 5.
+[33
 
 
 
 ]
-Chapter 5.
-[33]
 File: figures/first_test.png Graphic file (type bmp)
 <figures/first_test.png>
 
@@ -1857,6 +1869,8 @@ Overfull \hbox (7.03496pt too wide) in paragraph at lines 32--33
  []
 
 [34]
+File: figures/check_limit.png Graphic file (type bmp)
+<figures/check_limit.png>
 File: figures/second_test.png Graphic file (type bmp)
 <figures/second_test.png>
  [35]
@@ -1865,9 +1879,11 @@ File: figures/list_price.png Graphic file (type bmp)
  [36]
 File: figures/error_price.png Graphic file (type bmp)
 <figures/error_price.png>
+File: figures/expired_es.png Graphic file (type bmp)
+<figures/expired_es.png>
  [37]
-File: figures/third_test.png Graphic file (type bmp)
-<figures/third_test.png>
+File: figures/test_expired.png Graphic file (type bmp)
+<figures/test_expired.png>
  [38]
 File: figures/fourth_test.png Graphic file (type bmp)
 <figures/fourth_test.png>
@@ -1892,7 +1908,7 @@ File: figures/ctrl_test.png Graphic file (type bmp)
 File: figures/unit_test.png Graphic file (type bmp)
 <figures/unit_test.png>
 
-Overfull \hbox (12.59676pt too wide) in paragraph at lines 205--206
+Overfull \hbox (12.59676pt too wide) in paragraph at lines 215--216
  [] 
  []
 
@@ -1963,7 +1979,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 48.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 48.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 48.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: D7D8E4AAE526152BBF64FF84BD5A825F.
+(rerunfilecheck)             Checksum: 0B75260D9C06D744F528DD4D834C4977.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1973,10 +1989,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 46610 strings out of 492970
- 1037659 string characters out of 6133938
- 1289857 words of memory out of 5000000
- 49810 multiletter control sequences out of 15000+600000
+ 46620 strings out of 492970
+ 1037870 string characters out of 6133938
+ 1289996 words of memory out of 5000000
+ 49818 multiletter control sequences out of 15000+600000
  537093 words of font info for 60 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  85i,8n,138p,10464b,548s stack positions out of 5000i,500n,10000p,200000b,80000s

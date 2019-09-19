@@ -38,7 +38,7 @@ Pip.
 \newblock URL \url{https://pypi.org/project/pip/}.
 
 \bibitem[pos()]{postgresql}
-Sql-postgresql.
+Postgresql.
 \newblock URL \url{https://www.postgresql.org/}.
 
 \bibitem[pyc()]{pycharm}

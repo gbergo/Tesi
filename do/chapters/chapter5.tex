@@ -11,7 +11,7 @@ Per accertare la copertura dei requisiti si è ricorso a delle prove pratiche de
 
 \subsection{Limite di credito del partner}
 
-Come detto in precedenze nel \hypertarget{(chap:capitolo4)}{\textbf{Capitolo 4}} si confronta l'importo dell'ordine di vendita da approvare con il limite di credito del partner. Se il limite di credito è inferiore oppure si modifica il prezzo unitario del prodotto, non consente di approvare l'ordine di vendita.
+Come detto in precedenze nel \hyperlink{(chap:capitolo4)}{\textbf{Capitolo 4}} si confronta l'importo dell'ordine di vendita da approvare con il limite di credito del partner. Se il limite di credito è inferiore oppure si modifica il prezzo unitario del prodotto, non consente di approvare l'ordine di vendita.
 \newpage
 %\vspace*{0.5cm}
 Per effettuare questo test, abbiamo creato un 'Ordine di Vendita' ed abbiamo compilato i seguenti campi :
@@ -39,7 +39,12 @@ Invece, se al termine della procedura di compilazione dei campi il prezzo totale
 In questo esempio abbiamo confermato l'ordine di 18,30 €, ma il limite di credito del partner 'Francesco' è di 10 €.
 Una volta che si da l'ok al popup la fattura va nello stato 'Limite di Credito', dove non è più possibile modificarla.
 
-
+\begin{figure}[H]
+	\begin{center} \includegraphics[scale=0.3]{figures/check_limit}
+		\caption[Esempio limite di credito]{Esempio limite di credito}
+		\label{fig:check_limit}
+	\end{center}
+\end{figure}
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.3]{figures/second_test}
 		\caption[Test limite di credito]{Test limite di credito}
@@ -80,10 +85,15 @@ Per effettuare questo Test, abbiamo creato un 'Ordine di Vendita' ed abbiamo com
 
 A questo punto, si fa un click sul pulsante 'Conferma ordine', si visualizzerà il popup di errore.
 Una volta che si da l'ok al popup la fattura va nello stato\\ 'Blocco Stato', dove non è più possibile modificarla.
-
+\begin{figure}[H]
+	\begin{center} \includegraphics[scale=0.3]{figures/expired_es}
+		\caption[Esempio blocco scaduto]{Esempio blocco scaduto}
+		\label{fig:expired_es}
+	\end{center}
+\end{figure}
 
 \begin{figure}[H]
-	\begin{center} \includegraphics[scale=0.3]{figures/third_test}
+	\begin{center} \includegraphics[scale=0.3]{figures/test_expired}
 		\caption[Test blocco scaduto]{Test blocco scaduto}
 		\label{fig:third_test}
 	\end{center}

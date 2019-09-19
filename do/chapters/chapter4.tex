@@ -95,7 +95,7 @@ Al momento della conferma d'ordine verrà mostrato un popup contenente:
 	\end{center}
 \end{figure}
 
-Al momento del click sul tasto ok, del popup, la fattura si sposterà nello stato Limite di Credito, dove non sarà possibile modificarla, e verrà inviata una mail al direttore commerciale con scritto:\vspace*{0.5cm}\\
+Al momento del click sul tasto ok, del popup, la fattura si sposterà nello stato 'Limite di Credito', dove non sarà possibile modificarla, e verrà inviata una mail al direttore commerciale con scritto:\vspace*{0.5cm}\\
 \textit{Caro Administrator,\\
 	l'ordine di vendita \textbf{n° SO} del cliente \textbf{nome cliente} è stato bloccato per Limite di Credito.\\
 	Puoi accedere al SO dal seguente link: \textbf{link al SO di riferimento}.}\vspace*{0.5cm}
@@ -111,7 +111,7 @@ Al momento della conferma d'ordine verrà mostrato un popup contenente:\\
 	\item Button OK
 \end{itemize}
 \newpage
-Inoltre al momento del click del tasto ok del popup, la fattura si sposterà nello stato Blocco Scaduto, dove non sarà possibile modificarla, e verrà inviata una mail al direttore commerciale con scritto:
+Inoltre al momento del click del tasto ok del popup, la fattura si sposterà nello stato 'Blocco Scaduto', dove non sarà possibile modificarla, e verrà inviata una mail al direttore commerciale con scritto:
 \vspace*{0.5cm}\\
 \textit{Caro Administrator,\\
 l'ordine di vendita \textbf{n° SO} del cliente \textbf{nome cliente} è stato bloccato per presenza di pagamenti scaduti.\\
@@ -128,21 +128,29 @@ Puoi accedere al SO dal seguente link: \textbf{link al SO di riferimento}.}
 
 
 \newpage
-\section{Canali di Vendita}
+\subsection{Canali di Vendita}
 Nella sezione Vendite, sulla voce Canali di Vendita abbiamo la possibilità di inserire un nuovo canale.
 In questo modulo abbiamo aggiunto al form il campo Codice canale e Codice canale di vendita.
 Il campo Codice canale di vendita viene valorizzato con il codice canale + nome del canale di vendita.\\
-Poi nella voce Clienti, che fa riferimento ad un altro modulo, quando aggiungiamo un nuovo cliente e selezioniamo 'Persona', abbiamo aggiunto il campo Codice cliente. Questo campo non verrà visualizzato nel momento in cui inserendo un nuovo nuovo cliente selezioniamo azienda.
+Poi nella voce Clienti, che fa riferimento ad un altro modulo, quando aggiungiamo un nuovo cliente e selezioniamo \textit{Persona}, abbiamo aggiunto il campo Codice cliente. Questo campo non verrà visualizzato nel momento in cui inserendo un nuovo nuovo cliente selezioniamo \textit{Azienda}.
 
 \begin{figure}[H]
 	\begin{center} \includegraphics[scale=0.3]{figures/ibg_code}
-		\caption[Inserimento nuovo cliente: persona]{Inserimento nuovo cliente: persona}
+		\caption[Inserimento nuovo cliente: Persona]{Inserimento nuovo cliente: Persona}
 		\label{fig:ibg_code}
 	\end{center}
 \end{figure}
 \newpage
+Inserendo un nuovo cliente come \textit{Azienda} la vista del form è differente dall'inserimento come \textit{Persona}.
+\begin{figure}[H]
+	\begin{center} \includegraphics[scale=0.3]{figures/empresa}
+		\caption[Inserimento nuovo cliente: Azienda]{Inserimento nuovo cliente: Azienda}
+		\label{fig:empresa}
+	\end{center}
+\end{figure}
+\newpage
 
-\section{Gestione imballi}
+\subsection{Gestione imballi}
 Nella sezione Magazzino, sulla voce Colli di prodotto abbiamo aggiunto i seguenti campi:
 \begin{itemize}
 \item Pianale (in relazione con un solo prodotto);
